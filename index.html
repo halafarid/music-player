@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Sound</title>
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <section class="audio-section">
+            <audio id="audio" controls>
+                <source id="songSrc" src="songs/We Don't Talk Anymore - Charlie Puth.mp3" type="audio/mpeg" >
+            </audio>
+    
+            <section class="sound-section">
+
+                <div class="sound-track">
+                    <h1 id="sound-name"></h1>
+                    <span id="start-time"></span>
+                    <input type="range" name="sound" id="sound" min="0" value="0" oninput="changeTrack()">
+                    <span id="end-time"></span>
+                    <div class="options">
+                        <i class="fas fa-volume-up" id="mute"></i>    
+                        <input type="range" name="volume" id="volume" min="0" max="100" value="100">    
+                    </div>
+                </div>
+                
+                <div class="sound-options">
+                    <div class="options">
+                        <div class="basic-options">
+                            <i class="fas fa-step-backward" id="prev"></i>
+                            <i class="far fa-play-circle" id="playPause"></i>
+                            <i class="fas fa-step-forward" id="next"></i>
+                        </div>
+                        <div class="secondary-options">
+                            <i class="fas fa-stop-circle" id="stop"></i>
+                            <i class="fas fa-redo" id="repeat"></i>
+                            <i class="fas fa-random" id="random"></i>
+                        </div>     
+                    </div>
+                </div>
+            </section>
+            
+    
+            <div id="songs">
+                <ul id="songs-list">
+                    <li class="song active" data-value="0"><a href="#" class="link">We Don't Talk Anymore - Charlie Puth</a></li>
+                    <li class="song" data-value="1"><a href="#" class="link">Perfect - Ed Sheeran</a></li>
+                    <li class="song" data-value="2"><a href="#" class="link">Let Me Love You - DJ Snake ft. Justin Bieber</a></li>
+                    <li class="song" data-value="3"><a href="#" class="link">Treat You Better - Shawn Mendes</a></li>
+                    <li class="song" data-value="4"><a href="#" class="link">Rockabye  - Ft. Sean Paul & Anne Marie</a></li>
+                    <li class="song" data-value="5"><a href="#" class="link">Shape Of You - Ed Sheeran</a></li>
+                    <li class="song" data-value="6"><a href="#" class="link">A Different Way - DJ Snake & Lauv</a></li>
+                    <li class="song" data-value="7"><a href="#" class="link">Kiss Kiss - Feat Mohombi & Big Ali</a></li>
+                    <li class="song" data-value="8"><a href="#" class="link">Bum Bum Tam Tam - MC Fioti</a class="link"></li>
+                    <li class="song" data-value="9"><a href="#" class="link">Mi Gna - Super Sako & Spitakci Hayko</a></li>
+
+                </ul>
+            </div>
+        </section>
+        
+        <script src="js/plugin.js"></script>
+    </body>
+</html>
